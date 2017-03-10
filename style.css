@@ -59,6 +59,7 @@ input {
   border-radius: 3px;
   box-shadow: none;
   vertical-align: bottom;
+  font-size: 20px;
 }
 
 input:focus {
@@ -70,9 +71,7 @@ button {
   white-space: nowrap;
   display: inline-block;
   height: 40px;
-  line-height: 40px;
   padding: 0 14px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   background: #fff;
   border-radius: 4px;
   font-size: 15px;
@@ -82,6 +81,7 @@ button {
   color: #7795f8;
   text-decoration: none;
   transition: all .15s ease;
+  border: none;
 }
 
 
@@ -90,9 +90,11 @@ button:hover {
   transform: translateY(-1px);
 }
 
-button:active{
+button:active {
   background-color: #f6f9fc;
   transform: translateY(1px);
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
+button:focus {
+  outline: 0;
+}
